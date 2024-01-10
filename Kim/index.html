@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto&display=swap" rel="stylesheet">
+    <script defer src="app.js"></script>
+    <title>AI-generated Chart</title>
+</head>
+<body>
+    <h1>AI-tool generate chart</h1>
+    <div class="textContainer">
+        <label>Select the type of chart:</label>
+        <div class="custom-select">
+            <select id="chartType">
+                <option value="pie">Pie Chart</option>
+                <option value="bar">Bar Chart</option>
+                <option value="line">Line Chart</option>
+            </select>
+        </div>
+        <br>
+        <label for="colorInput">Colors that you want to use:</label>
+        <input type="text" id="colorInput" placeholder="#ff5733, #3380ff, #4caf50">
+    </div>
+
+    <textarea id="textInput" placeholder="Please enter your text with numerical values."></textarea>
+    <button class="ButtonChart" onclick="generateChart()">Generate Chart</button>
+    <canvas id="myChart" width="300" height="300"></canvas>
+</body>
+</html>
