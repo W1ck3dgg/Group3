@@ -1,0 +1,17 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Text Summarization with OpenAI</title>
+</head>
+<body>
+    <textarea id="inputText" rows="4" cols="50">Enter text here...</textarea><br>
+    <input type="file" id="fileInput" accept=".txt" style="display:none;">
+    <label for="fileInput" id="fileInputLabel" style="cursor: pointer;">Drag and drop or click to upload a .txt file</label>
+    <br>
+    <button onclick="summarizeText()">Summarize</button>
+    <p>Summary:</p>
+    <textarea id="outputText" rows="4" cols="50" readonly></textarea>
+
+    <script src="Script1.js"></script>
+</body>
+</html>
