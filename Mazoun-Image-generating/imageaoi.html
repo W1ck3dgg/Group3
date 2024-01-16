@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Search Engine</title>
+    <link rel="stylesheet" href="imagestyle.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">DataDash</div>
+        <div class="nav-links">
+          <a href="/" class="nav-link">Home</a>
+          <a href="/" class="nav-link workspace">Workspace</a>
+          <!-- This link will have the yellow underline -->
+          <a href="/" class="nav-link">Help</a>
+        </div>
+      </nav>
+    </header>
+    <aside class="sidebar">
+      <nav>
+        <ul class="sidebar-nav">
+          <li>
+            <a href="#tool"
+              ><img src="./images/paraphrase.png" alt="Tool Icon" /><span
+                class="tool-text"
+              >
+                Paraphrase</span
+              ></a
+            >
+          </li>
+          <li>
+            <a href="#tool"
+              ><img src="./images/summary.png" alt="Tool Icon" /><span
+                class="tool-text"
+              >
+                Summary
+              </span></a
+            >
+          </li>
+          <li>
+            <a href="#tool"
+              ><img src="./images/infograph.png" alt="Tool Icon" /><span
+                class="tool-text"
+              >
+                Infogrph
+              </span></a
+            >
+          </li>
+          <li>
+            <a href="#tool"
+              ><img src="./images/photo.png" alt="Tool Icon" /><span
+                class="tool-text"
+              >
+                Image
+              </span></a
+            >
+          </li>
+        </ul>
+      </nav>
+    </aside>
+    <h1 class="title">image search engine</h1>
+    <div class="formbackground">
+      <form id="search-form">
+        <input type="text" id="search-box" placeholder="Search image..." />
+        <button>Search</button>
+      </form>
+      <div id="search-result"></div>
+      <button id="show-more-btn">Show more</button>
+    </div>
+
+    <script src="imagescript.js"></script>
+  </body>
+</html>

@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+}
+h1 {
+  text-align: center;
+  margin: 100px auto 50px;
+  font-weight: 600;
+}
+header {
+  background-color: #283d7c;
+  color: white;
+  display: grid;
+  grid-template-columns: auto 1fr auto; /* Left, center, right */
+  align-items: center;
+  padding: 10px 20px;
+}
+header nav {
+  display: flex;
+  justify-content: center; /* Center the navigation items */
+  align-items: center;
+}
+
+header nav .nav-links {
+  display: flex;
+  margin-left: 400px;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none; /* Removes default list styling */
+}
+header nav .nav-links a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px; /* Provides spacing between navigation links */
+}
+/* Add a yellow underline to the 'Workspace' link specifically */
+header nav .nav-links a.workspace {
+  border-bottom: 2px solid yellow;
+  margin-bottom: 2px;
+}
+
+.sidebar {
+  border: 3px solid #e7e7e7;
+  background-color: #fff;
+  border-radius: 7px;
+  width: 20px;
+  height: 30vh;
+  position: fixed;
+  padding: 20px;
+  left: 5%;
+  top: 20%;
+  transition: width 0.3s ease-in-out;
+}
+
+.sidebar:hover {
+  width: 200px; /* Width expands on hover to fit text */
+}
+
+.sidebar-nav {
+  list-style-type: none;
+  position: absolute;
+  left: 8px; /* Adjust the right position as needed */
+}
+
+.sidebar-nav li {
+  padding-top: 10px; /* Adjust padding as needed */
+  padding-bottom: 10px; /* Adjust padding as needed */
+}
+
+.sidebar-nav li a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  white-space: nowrap;
+  color: rgb(0, 0, 0);
+}
+.sidebar-nav li a img {
+  margin-right: 10px;
+  width: 24px; /* Adjust size as needed */
+  height: auto;
+}
+
+.tool-text {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.sidebar:hover .tool-text {
+  opacity: 1;
+}
+
+main {
+  margin-left: 200px;
+  padding: 20px;
+}
+
+.title {
+  margin-bottom: 1px;
+}
+
+.formbackground {
+  background-color: #eceff1;
+  padding: 10px;
+  width: 80%;
+  margin-left: 15%;
+  margin-bottom: 50px; /* Adjusted for spacing after the button */
+  border-radius: 10px;
+  /* Removed fixed height */
+  display: flex; /* Use flexbox to handle child layouts */
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Center children horizontally */
+  justify-content: space-around; /* Evenly distribute space before, between, and after children */
+}
+
+form {
+  width: 50%;
+  max-width: 600px;
+  margin: 20px auto; /* Centers the form with a margin top and bottom */
+  height: 40px;
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+}
+
+form input {
+  flex: 1;
+  height: 100%;
+  border: 0;
+  outline: 0;
+  color: #000000;
+  background-color: #ffffff;
+  font-size: 18px;
+  padding: 0 30px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+form button {
+  padding: 0 10px;
+  height: 100%;
+  background-color: #ffffff;
+  font-size: 18px;
+  border: 0;
+  outline: 0;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  cursor: pointer;
+}
+::placeholder {
+  color: rgb(92, 92, 92);
+  font-size: 18px;
+}
+#show-more-btn {
+  background: #283d7c;
+  color: #fff;
+  border: 0;
+  outline: 0;
+  padding: 10px 20px;
+  border-radius: 4px;
+  margin: 10px auto 100px;
+  cursor: pointer;
+  display: none;
+}
+
+#search-result {
+  width: 80%;
+  margin: 100px auto 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 40px;
+}
+#search-result img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 5px;
+}
