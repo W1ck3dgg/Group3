@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto&display=swap" rel="stylesheet">
+    <script defer src="app.js"></script>
+    <title>AI-generated Chart</title>
+    <header>
+      <nav class="navbar">
+        <div class="logo">DataDash</div>
+        <div class="nav-links">
+          <a href="/" class="nav-link">Home</a>
+          <a href="/" class="nav-link workspace">Workspace</a>
+          <!-- This link will have the yellow underline -->
+          <a href="/" class="nav-link">Help</a>
+        </div>
+      </nav>
+    </header>
+</head>
+<body>
+    <aside class="sidebar">
+        <nav>
+          <ul class="sidebar-nav">
+            <li>
+              <a href="#tool"
+                ><img src="./images/paraphrase.png" alt="Tool Icon" /><span
+                  class="tool-text"
+                >
+                  Paraphrase</span
+                ></a
+              >
+            </li>
+            <li>
+              <a href="#tool"
+                ><img src="./images/summary.png" alt="Tool Icon" /><span
+                  class="tool-text"
+                >
+                  Summary
+                </span></a
+              >
+            </li>
+            <li>
+              <a href="#tool"
+                ><img src="./images/infograph.png" alt="Tool Icon" /><span
+                  class="tool-text"
+                >
+                  Infogrph
+                </span></a
+              >
+            </li>
+            <li>
+              <a href="#tool"
+                ><img src="./images/photo.png" alt="Tool Icon" /><span
+                  class="tool-text"
+                >
+                  Image
+                </span></a
+              >
+            </li>
+          </ul>
+        </nav>
+      </aside>
+    <h1>AI-tool generate chart</h1>
+    <div class="textContainer">
+        <label>Select the type of chart:</label>
+        <div class="custom-select">
+            <select id="chartType">
+                <option value="pie">Pie Chart</option>
+                <option value="bar">Bar Chart</option>
+                <option value="line">Line Chart</option>
+            </select>
+        </div>
+        <br>
+        <label for="colorInput">Colors that you want to use:</label>
+        <input type="text" id="colorInput" placeholder="#ff5733, #3380ff, #4caf50">
+    </div>
+
+    <textarea id="textInput" placeholder="Please enter your text with numerical values and a value behind it (10 cheese, 3 mouse)."></textarea>
+    <br>
+    <button class="ButtonChart" onclick="generateChart()">Generate Chart</button>
+    <br><br><br>
+    <canvas id="myChart" width="500" height="500"></canvas>
+</body>
+</html>
