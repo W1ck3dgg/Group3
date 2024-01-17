@@ -1,3 +1,11 @@
+
+// your-script.js
+const apiKey = window.config.openaiApiKey;
+
+// Your existing code...
+
+
+
 document.addEventListener('DOMContentLoaded', function () {
     const fileInput = document.getElementById('fileInput');
     const inputText = document.getElementById('inputText');
@@ -43,7 +51,7 @@ async function summarizeText() {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
-                'Authorization': 'Bearer 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' // Replace with your API Key
+                'Authorization': 'Bearer ' + apiKey // Replace with your API Key
             },
             body: JSON.stringify({
                 "model": "gpt-3.5-turbo",
