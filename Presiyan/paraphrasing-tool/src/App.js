@@ -8,6 +8,7 @@ import Divider from '@material-ui/core/Divider';
 import TextField from '@material-ui/core/TextField';
 import Container from '@material-ui/core/Container';
 import Header from './Header';
+import Sidebar from './Sidebar';
 
 import SubmitButton from './Submit/SubmitButton';
 
@@ -60,6 +61,7 @@ export default function ParaphrasingTool() {
     <div className={classes.root}>
       <Header />
       <CssBaseline />
+      <Sidebar />
       <Container component="main" className={classes.main} maxWidth="md">
         <Typography variant="h2" component="h1" gutterBottom>
           Paraphrasing Tool
