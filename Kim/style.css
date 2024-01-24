@@ -1,119 +1,118 @@
-
 textarea {
-    width: 60%;
-    height: 80px;
-    margin-bottom: 10px;
-    margin-left: 300px;
+  width: 60%;
+  height: 80px;
+  margin-bottom: 10px;
+  margin-left: 300px;
 }
 
 label {
-    margin-right: 10px;
-    margin-left: 300px;
+  margin-right: 10px;
+  margin-left: 300px;
 }
 
 .ButtonChart {
-    background-color: #283D7C;
-    color: white; 
+  background-color: #283d7c;
+  color: white;
 }
 
 button {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding: 16px;
-    border-radius: 20px;
-    text-decoration: none;
-    border: none;
-    left: 50%;
-    position: absolute;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 16px;
+  border-radius: 20px;
+  text-decoration: none;
+  border: none;
+  left: 50%;
+  position: absolute;
 }
 
 button:hover {
-    background-color: #0D1B47;
+  background-color: #0d1b47;
 }
 
 canvas {
-    display: block;
-    margin: auto;
-    margin-top: 20px;
-    border: 1px solid #ddd;
-    width: 300px;
-    height: 300px;
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+  border: 1px solid #ddd;
+  width: 300px;
+  height: 300px;
 }
 
 /* The container must be positioned relative: */
 .custom-select {
-    position: relative;
-    width: 60%;
-    margin-left: 300px;
-  }
-  
-  .custom-select select {
-    display: none; /*hide original SELECT element: */
-  }
-  
-  .select-selected {
-    background-color: #dddddd;  
+  position: relative;
+  width: 60%;
+  margin-left: 300px;
 }
-  
-  /* Style the arrow inside the select element: */
-  .select-selected:after {
-    position: absolute;
-    content: "";
-    top: 14px;
-    right: 10px;
-    width: 0;
-    height: 0;
-    border: 6px solid transparent;
-    border-color: #fff transparent transparent transparent;
-  }
-  
-  /* Point the arrow upwards when the select box is open (active): */
-  .select-selected.select-arrow-active:after {
-    border-color: transparent transparent #fff transparent;
-    top: 7px;
-  }
-  
-  /* style the items (options), including the selected item: */
-  .select-items div,.select-selected {
-    color: #000000;
-    padding: 8px 16px;
-    border: 1px solid transparent;
-    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
-    cursor: pointer;
-  }
-  
-  /* Style items (options): */
-  .select-items {
-    position: absolute;
-    background-color: #F5F5F5;
-    top: 100%;
-    left: 0;
-    right: 0;
-    z-index: 99;
-  }
-  
-  /* Hide the items when the select box is closed: */
-  .select-hide {
-    display: none;
-  }
-  
-  .select-items div:hover, .same-as-selected {
-    background-color: rgba(0, 0, 0, 0.1);
-  }
+
+.custom-select select {
+  display: none; /*hide original SELECT element: */
+}
+
+.select-selected {
+  background-color: #dddddd;
+}
+
+/* Style the arrow inside the select element: */
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+}
+
+/* Point the arrow upwards when the select box is open (active): */
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #fff transparent;
+  top: 7px;
+}
+
+/* style the items (options), including the selected item: */
+.select-items div,
+.select-selected {
+  color: #000000;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+}
+
+/* Style items (options): */
+.select-items {
+  position: absolute;
+  background-color: #f5f5f5;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+/* Hide the items when the select box is closed: */
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover,
+.same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}
 
 #colorInputs {
-    text-align: center;
+  text-align: center;
 }
 
-#chartType{
-    margin-top: 50px;
-    padding: 30px;
-    border-radius: 20px;
-    text-decoration: none;
-    border: none;
+#chartType {
+  margin-top: 50px;
+  padding: 30px;
+  border-radius: 20px;
+  text-decoration: none;
+  border: none;
 }
-
-
 
 * {
   margin: 0;
@@ -145,7 +144,7 @@ header nav {
 
 header nav .nav-links {
   display: flex;
-  margin-left: 400px;
+  margin-left: 520px;
   justify-content: space-between;
   align-items: center;
   list-style-type: none; /* Removes default list styling */
