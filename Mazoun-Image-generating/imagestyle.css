@@ -28,7 +28,7 @@ header nav {
 
 header nav .nav-links {
   display: flex;
-  margin-left: 400px;
+  margin-left: 520px;
   justify-content: space-between;
   align-items: center;
   list-style-type: none; /* Removes default list styling */
