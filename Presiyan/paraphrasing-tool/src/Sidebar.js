@@ -70,7 +70,7 @@ export default function Sidebar() {
             </a>
           </li>
           <li className={classes.navItem}>
-            <a href="./../Negin-OpenAI-summarize/HTMLPage1.html" className={classes.navLink}>
+            <a href="../../../Negin-OpenAI-summarize/HTMLPage1.html" className={classes.navLink}>
               <img
                 src="/summary.png"
                 alt="Tool Icon"
@@ -80,7 +80,7 @@ export default function Sidebar() {
             </a>
           </li>
           <li className={classes.navItem}>
-            <a href="#tool" className={classes.navLink}>
+            <a href="../../../Kim/GraphGenerator.html" className={classes.navLink}>
               <img
                 src="/infograph.png"
                 alt="Tool Icon"
@@ -90,7 +90,7 @@ export default function Sidebar() {
             </a>
           </li>
           <li className={classes.navItem}>
-            <a href="#tool" className={classes.navLink}>
+            <a href="../../../Mazoun-Image-generating/imageaoi.html" className={classes.navLink}>
               <img src="/photo.png" alt="Tool Icon" className={classes.icon} />
               <span className={classes.toolText}>Image</span>
             </a>
