@@ -69,8 +69,8 @@ export default function Sidebar() {
               <span className={classes.toolText}>Paraphrase</span>
             </a>
           </li>
-          <li className={classes.navItem} href="./../Negin-OpenAI-summarize/HTMLPage1.html">
-            <a href="#tool" className={classes.navLink}>
+          <li className={classes.navItem}>
+            <a href="./../Negin-OpenAI-summarize/HTMLPage1.html" className={classes.navLink}>
               <img
                 src="/summary.png"
                 alt="Tool Icon"
