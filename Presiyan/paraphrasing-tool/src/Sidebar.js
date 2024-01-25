@@ -7,7 +7,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: "#fff",
     borderRadius: 7,
     width: 50, // Increased to accommodate icon + padding
-    height: "25vh",
+    height: "30vh",
     position: "fixed",
     padding: "20px 0", // Top and bottom padding only
     left: "5%",
